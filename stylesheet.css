@@ -28,9 +28,10 @@
     --border: #404046;
 
 /* -------- HINTS -------- */
-    --bg-hints: #FFD752;      /* Background color of link hints */
-    --border-hints: #F4CA46;  /* Border color of link hints */
-    --fg-hints: #000000;      /* Text color of link hints, (don't forget to change `#vimiumHintMarkerContainer div > .matchingCharacter ~ span`) */
+    --bg-hints: #2A2A2E;          /* Background color of link hints */
+    --border-hints: #404046;      /* Border color of link hints */
+    --fg-hints: #FFFFFF;          /* Text color of link hints */
+    --fg-hints-matching: #FFFFFF; /* Text color of link hints when selected */
 }
 
 /* --------------------------------- CSS --------------------------------- */
@@ -56,7 +57,7 @@
 }
 
 #vimiumHintMarkerContainer div > .matchingCharacter ~ span {
-    color: var(--hints-main-fg);
+    color: var(--fg-hints-matching);
 }
 
 /* -------- VOMNIBAR -------- */
